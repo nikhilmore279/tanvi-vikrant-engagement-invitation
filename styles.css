@@ -14,12 +14,21 @@
 html { scroll-behavior: smooth; }
 
 body {
+	position: relative;
 	margin: 0;
 	color: var(--rose-dark);
 	background: linear-gradient(180deg, #f8e8ea 0, #fff9f8 380px, var(--paper) 760px);
 	font-family: var(--serif);
 	text-align: center;
 	-webkit-font-smoothing: antialiased;
+}
+
+body::after {
+	position: absolute;
+	inset: 0;
+	border: 1px solid var(--gold);
+	content: "";
+	pointer-events: none;
 }
 
 main { overflow: hidden; background: var(--blush); }
@@ -176,8 +185,8 @@ h1 {
 	.host-names { width: calc(100% + 30px); margin-right: -15px; margin-left: -15px; flex-direction: row; flex-wrap: nowrap; align-items: baseline; gap: 0 4px; font-size: clamp(10px, 3.1vw, 16px); white-space: nowrap; }
 	.name-lockup { width: calc(100% + 30px); grid-template-columns: clamp(15px, 5vw, 26px) minmax(0, 1fr) clamp(15px, 5vw, 26px); gap: clamp(8px, 3vw, 16px); margin: 17px -15px 22px; padding-block: clamp(16px, 5vw, 26px); }
 	.ring-art { width: 100%; transform: scale(1.8); }
-	.ring-art-left { transform: translateX(clamp(6px, 2.8vw, 12px)) scale(2.8); }
-	.ring-art-right { transform: translateX(calc(0px - clamp(6px, 2.8vw, 12px))) scaleX(-1) scale(2.8); }
+	.ring-art-left { transform: translateX(clamp(6px, 3vw, 12px)) scale(2.8); }
+	.ring-art-right { transform: translateX(calc(0px - clamp(6px, 3vw, 12px))) scaleX(-1) scale(2.8); }
 	.couple-names { font-size: clamp(36px, 13vw, 60px); transform: scaleX(.92); transform-origin: center; }
 	.calendar-link { min-height: 40px; padding: 6px 12px; margin-top: 6px; font-size: 13px; }
 	.date-block { grid-template-columns: 1fr 76px 1fr; gap: 9px; margin-top: 13px;}
