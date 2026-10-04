@@ -7,7 +7,7 @@
 	--gold: #a8833f;
 	--green: #385445;
 	--serif: Georgia, "Times New Roman", serif;
-	--script: "Segoe Script", "Brush Script MT", cursive;
+	--script: "Great Vibes", "Segoe Script", "Brush Script MT", cursive;
 }
 
 * { box-sizing: border-box; }
@@ -74,10 +74,10 @@ h1 {
 	gap: 2px 10px;
 	margin: 0 0 4px;
 	color: var(--rose-dark);
-	font-size: clamp(16px, 2vw, 20px);
-	font-variant: small-caps;
-	font-weight: 600;
-	line-height: 1.45;
+	font-size: clamp(24px, 2.5vw, 30px);
+	font-family: var(--script);
+	font-weight: 400;
+	line-height: 1.2;
 }
 .host-connector { color: var(--gold); font-family: var(--script); font-size: 1.05em; font-weight: 400; }
 
@@ -87,7 +87,7 @@ h1 {
 	line-height: 0;
 }
 
-.ring-name-art { display: block; width: 100%; height: auto; mix-blend-mode: multiply; }
+.ring-name-art { display: block; width: 100%; height: auto; mix-blend-mode: multiply; transform: scale(1.08); }
 
 .date-block {
 	display: grid;
@@ -164,7 +164,7 @@ h1 {
 	.eyebrow { font-size: 10px; letter-spacing: 2px; }
 	h1 { font-size: clamp(30px, 9vw, 40px); }
 	.intro { font-size: 15px; }
-	.host-names { flex-direction: column; align-items: center; gap: 0; font-size: 17px; }
+	.host-names { flex-direction: column; align-items: center; gap: 0; font-size: 27px; }
 	.name-lockup { margin: 17px 0 22px; }
 	.date-block { grid-template-columns: 1fr 76px 1fr; gap: 9px; }
 	.date-caption { font-size: 12px; }
@@ -182,7 +182,7 @@ h1 {
 	.header-art { width: 100%; height: auto; margin: 0; }
 	.invitation { margin-top: 0; padding: 0 16px 8px; }
 	h1 { margin-bottom: 6px; font-size: 26px; }
-	.host-names { margin-bottom: 2px; font-size: 15px; line-height: 1.2; }
+	.host-names { margin-bottom: 2px; font-size: 24px; line-height: 1.1; }
 	.intro { font-size: 13px; line-height: 1.3; }
 	.name-lockup { margin: 8px 0 8px; }
 	.date-block { gap: 8px; margin-bottom: 8px; }
