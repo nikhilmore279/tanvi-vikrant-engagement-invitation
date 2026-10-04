@@ -7,7 +7,6 @@
 	--gold: #a8833f;
 	--green: #385445;
 	--serif: Georgia, "Times New Roman", serif;
-	--script: "Great Vibes", "Segoe Script", "Brush Script MT", cursive;
 }
 
 * { box-sizing: border-box; }
@@ -75,11 +74,11 @@ h1 {
 	margin: 0 0 4px;
 	color: var(--rose-dark);
 	font-size: clamp(24px, 2.5vw, 30px);
-	font-family: var(--script);
-	font-weight: 400;
+	font-family: var(--serif);
+	font-weight: 500;
 	line-height: 1.2;
 }
-.host-connector { color: var(--gold); font-family: var(--script); font-size: 1.05em; font-weight: 400; }
+.host-connector { color: var(--gold); font-family: inherit; font-size: 1em; font-weight: inherit; }
 
 .name-lockup {
 	width: 100%;
@@ -164,7 +163,7 @@ h1 {
 	.eyebrow { font-size: 10px; letter-spacing: 2px; }
 	h1 { font-size: clamp(30px, 9vw, 40px); }
 	.intro { font-size: 15px; }
-	.host-names { flex-direction: row; flex-wrap: nowrap; align-items: baseline; gap: 0; font-size: clamp(12px, 3.6vw, 16px); white-space: nowrap; }
+	.host-names { width: calc(100% + 30px); margin-right: -15px; margin-left: -15px; flex-direction: row; flex-wrap: nowrap; align-items: baseline; gap: 0 2px; font-size: clamp(12px, 3.5vw, 16px); white-space: nowrap; }
 	.name-lockup { margin: 17px 0 22px; }
 	.date-block { grid-template-columns: 1fr 76px 1fr; gap: 9px; }
 	.date-caption { font-size: 12px; }
@@ -183,7 +182,7 @@ h1 {
 	.header-art { width: 100%; height: auto; margin: 0; }
 	.invitation { margin-top: 0; padding: 0 16px 8px; }
 	h1 { margin-bottom: 6px; font-size: 26px; }
-	.host-names { margin-bottom: 2px; font-size: clamp(12px, 3.6vw, 16px); line-height: 1.2; }
+	.host-names { margin-bottom: 2px; font-size: clamp(12px, 3.5vw, 16px); line-height: 1.2; }
 	.intro { font-size: 13px; line-height: 1.3; }
 	.name-lockup { margin: 8px 0 8px; }
 	.date-block { gap: 8px; margin-bottom: 8px; }
