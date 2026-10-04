@@ -82,11 +82,17 @@ h1 {
 .host-connector { color: var(--gold); font-family: inherit; font-size: 1em; font-weight: inherit; }
 
 .name-lockup {
+	display: grid;
+	grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr);
+	align-items: center;
+	gap: clamp(8px, 2vw, 24px);
 	width: 100%;
 	margin: 16px 0 24px;
 	line-height: 1.1;
 }
 
+.ring-art { display: block; width: min(100%, 120px); height: auto; justify-self: center; mix-blend-mode: multiply; }
+.ring-art-right { transform: scaleX(-1); }
 .couple-names { margin: 0; color: var(--rose); font-family: var(--serif); font-size: clamp(32px, 8vw, 56px); font-weight: 700; line-height: 1.1; }
 .couple-names span { color: var(--gold); }
 
@@ -166,8 +172,9 @@ h1 {
 	h1 { font-size: clamp(30px, 9vw, 40px); }
 	.intro { font-size: 15px; }
 	.host-names { width: calc(100% + 30px); margin-right: -15px; margin-left: -15px; flex-direction: row; flex-wrap: nowrap; align-items: baseline; gap: 0 1px; font-size: clamp(10px, 3.25vw, 16px); white-space: nowrap; }
-	.name-lockup { margin: 17px 0 22px; }
-	.couple-names { font-size: clamp(28px, 9vw, 40px); }
+	.name-lockup { grid-template-columns: clamp(18px, 7.5vw, 38px) minmax(0, 1fr) clamp(18px, 7.5vw, 38px); gap: clamp(2px, 1vw, 6px); margin: 17px 0 22px; }
+	.ring-art { width: 100%; }
+	.couple-names { font-size: clamp(20px, 6.4vw, 40px); white-space: nowrap; }
 	.date-block { grid-template-columns: 1fr 76px 1fr; gap: 9px; }
 	.date-caption { font-size: 12px; }
 	.date-side { gap: 7px; }
