@@ -155,9 +155,9 @@ h1 {
 
 .mobile-divider { display: none; }
 
-.venue { max-width: 610px; margin: 0 auto; }
+.venue { width: min(calc(100% - 32px), 610px); margin: 0 auto; }
 .venue h2 { margin-bottom: 13px; color: var(--green); font-size: 27px; font-weight: 500; }
-.venue address { margin: 0 auto 19px; font-size: 17px; font-style: normal; line-height: 1.7; }
+.venue address { max-width: 100%; margin: 0 auto 19px; font-size: 17px; font-style: normal; line-height: 1.7; overflow-wrap: anywhere; }
 .closing-line { margin: 0 0 10px; color: var(--green); font-size: 18px; font-style: italic; line-height: 1.4; }
 
 .arch-section { width: min(100%, 1040px); margin: 0 auto; line-height: 0; }
