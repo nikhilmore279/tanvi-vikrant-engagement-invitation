@@ -1,0 +1,21 @@
+{
+  "name": "tanvi-vikrant-engagement-invitation",
+  "version": "1.0.0",
+  "description": "Engagement invitation website for Tanvi and Vikrant",
+  "type": "module",
+  "scripts": {
+    "dev": "vercel dev",
+    "build": "vercel build",
+    "deploy": "vercel deploy"
+  },
+  "dependencies": {
+    "@vercel/analytics": "^1.4.1"
+  },
+  "devDependencies": {},
+  "keywords": [
+    "invitation",
+    "engagement"
+  ],
+  "author": "",
+  "license": "ISC"
+}

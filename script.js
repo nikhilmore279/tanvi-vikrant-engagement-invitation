@@ -1,3 +1,7 @@
+// Vercel Web Analytics is initialized via the inline script in index.html
+// The window.va function queues analytics calls before the script loads
+// Analytics will be fully active when deployed to Vercel
+
 const calendarLink = document.querySelector(".calendar-link");
 
 if (calendarLink) {
